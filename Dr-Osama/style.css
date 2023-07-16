@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: rgba(106, 214, 218, 0.205);
+}
+header {
+  height: 102px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  align-items: stretch;
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(34, 98, 186, 1) 80%,
+    rgba(0, 73, 145, 1) 100%
+  );
+  font-size: 350%;
+  height: 100px;
+  border-bottom: 1px rgb(0, 73, 145) solid;
+  overflow: hidden;
+}
+.title {
+  color: rgb(255, 255, 255);
+  flex-grow: 2;
+  font-family: "Sofia", "Times New Roman", Georgia, serif;
+  text-align: center;
+  margin: 12px 0 0 0;
+  cursor: pointer;
+}
+.logo {
+  height: 100px;
+}
+nav {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+}
+nav > ul > li {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-size: 25px;
+  background: rgb(14, 197, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(14, 197, 255, 1) 54%,
+    rgb(76, 149, 250) 100%
+  );
+}
+nav > ul > li:hover {
+  background-color: rgb(14, 50, 255);
+  text-shadow: 3px 3px 3px #c2baf0;
+}
+nav > ul {
+  display: inline;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 3px 3px 3px #2600ff;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.drs-block {
+  border: rgb(0, 162, 255) 4px solid;
+  width: fit-content;
+  border-radius: 20px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 0 10px;
+}
+.dr-text {
+  display: inline-grid;
+
+  grid-row: auto;
+  color: rgb(0, 162, 255);
+  text-align: center;
+  font-size: 30px;
+}
+.dr-image {
+  width: 100%;
+  border: 1px rgb(0, 162, 255) solid;
+}
+
+.dr-text span:hover {
+  cursor: pointer;
+  color: rgb(228, 27, 0);
+}
+
+.news-block {
+  margin: auto;
+  margin-top: 20px;
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.news-block-item {
+  border: 0.5px rgba(83, 182, 240, 0.507) solid;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(123, 212, 247, 0.281);
+  height: 350px;
+  text-align: center;
+}
+.news-block-item div {
+  align-items: center;
+  border-radius: 10%;
+  overflow: hidden;
+  padding: 20px;
+  height: 250px;
+}
+.news-block-item div img {
+  width: 100%;
+}
+.news-block-item h1 {
+  background-color: #fff;
+  padding: 10px;
+  color: rgb(0, 162, 255);
+}
+
+h1:hover {
+  color: rgb(228, 0, 0);
+}
+.flags {
+  text-align: center;
+  color: rgba(253, 253, 253, 0.897);
+  font-size: 400%;
+  background-color: rgba(21, 127, 177, 0.74);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 25px;
+  border: 1px gray solid;
+  cursor: pointer;
+}
+.flags-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: rgba(4, 109, 158, 0.897);
+  font-size: 400%;
+  margin: 0 20px;
+  font-family: Times, "Times New Roman", Georgia, serif;
+  text-align: center;
+  text-align: center;
+  gap: 25px;
+}
+.flags-block-item {
+  display: inline-block;
+  overflow: hidden;
+}
+.flags-block-item img {
+  width: 50%;
+}
+.container {
+  width: 540px;
+  margin: 40px auto;
+  overflow: auto;
+}
+
+.slider-inner {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  padding: 3px;
+  border: rgb(39, 99, 211) solid 3px;
+}
+
+.slider-inner img {
+  display: none;
+  width: 500px;
+  height: 300px;
+}
+
+.slider-inner img.active {
+  display: inline-block;
+}
+
+.prev,
+.next {
+  float: left;
+  margin-top: 130px;
+  cursor: pointer;
+}
+
+.prev {
+  position: relative;
+  margin-right: -45px;
+  z-index: 100;
+}
+
+.next {
+  position: relative;
+  margin-left: -45px;
+  z-index: 100;
+}
+footer {
+  padding: 50px;
+  text-align: center;
+  background: rgb(96, 200, 233);
+  background: radial-gradient(
+    circle,
+    rgba(96, 200, 233, 1) 50%,
+    rgba(22, 88, 210, 1) 100%
+  );
+  color: #f3f6fa;
+  font-size: 30px;
+}
+footer span {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(22, 88, 210, 1);
+}
+.end {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(0, 162, 255);
+}
+.flago {
+  text-align: center;
+  font-size: 40px;
+
+  color: rgb(0, 162, 255);
+}
+@media only screen and (max-width: 1000px) {
+  .news-block {
+    grid-template-columns: 1fr;
+  }
+
+  .news-block-item div {
+    height: 500px;
+  }
+  .news-block-item {
+    height: 600px;
+  }
+  .flags-block-item img {
+    width: 80%;
+  }
+  nav > ul > li {
+    display: block;
+  }
+  nav {
+    height: fit-content;
+  }
+}
